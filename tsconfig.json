@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "es2017",                       // Node.js typically supports ES2017 features
+      "module": "commonjs",                     // Node.js uses commonjs module system
+      "lib": ["es2017"],                        // Library files to be included in the compilation
+      "outDir": "./dist",                       // Output directory for compiled files
+      "rootDir": "./src",                       // Root directory of your source files
+      "strict": true,                           // Enables strict type-checking options
+      "esModuleInterop": true,                  // Allow default imports from modules with no default export
+      "skipLibCheck": true,                     // Skip type checking of all declaration files
+      "forceConsistentCasingInFileNames": true, // Ensure consistent casing in user-written imports
+      "resolveJsonModule": true                 // Include JSON files
+    },
+    "include": [
+      "src/**/*"                                // Include all TypeScript files in src
+    ],
+    "exclude": [
+      "node_modules"                            // Exclude node_modules from source files
+    ]
+  }
+  
