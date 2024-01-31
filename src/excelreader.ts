@@ -2,10 +2,12 @@
 import * as XLSX from 'xlsx';
 
 export interface EmailRecord {
-    DELIVERY_UNIT: string;
     EMAIL: string;
     EIN: string;
-    NAME: string;
+    DELIVERY_UNIT: string;
+    DELIVERY_UNIT_2: string;
+    DELIVERY_UNIT_3: string;
+    DELIVERY_UNIT_4: string;
   }
 
 export function readExcelData(filePath: string): EmailRecord[] {
